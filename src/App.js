@@ -3,6 +3,7 @@ import './App.css';
 import HomePage  from './components/HomePage';
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Form from './components/FormRegistration/Form';
+import Navbar from "./components/Navbar/Navbar"
 
 
 const appRouter = createBrowserRouter([
@@ -13,6 +14,10 @@ const appRouter = createBrowserRouter([
   {
     path: "/form",
     element: <Form/>
+  },
+  {
+    path: "/navbar",
+    element: <Navbar/>
   }
 ])
 
